@@ -1,0 +1,104 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    caret-color: transparent;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0px;
+    grid-gap: 0px;
+  }
+
+  .box {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 33vw;
+    height: 33vh;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin: 0px;
+    padding: 0px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  .box1:hover {
+    background-color: #ffce33;
+    font-size: 2em;
+  }
+
+  .box2:hover {
+    background-color: #ff4500;
+    font-weight: bold;
+  }
+
+  .box3:hover {
+    background-color: #00bfff;
+    font-style: italic;
+  }
+
+  .box4:hover {
+    background-color: #32cd32;
+    text-decoration: underline;
+  }
+
+  .box5:hover {
+    background-color: #9400d3;
+    transform: translateX(-5px);
+    animation: shake 0.3s ease-in-out;
+  }
+
+  @keyframes shake {
+    0% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    100% { transform: translateX(-5px); }
+  }
+
+  .box6:hover {
+    background: rgb(2,0,36);
+    background: linear-gradient(47deg, rgba(2,0,36,1) 0%, rgba(9,121,93,1) 41%, rgba(0,212,255,1) 100%); 
+    border: 2px solid #ff0000;
+  }
+
+  .box7:hover {
+    background-color: #ff69b4;
+    transform: rotate(360deg);
+  }
+
+  .box8:hover {
+    background-color: #4169e1;
+    order: -1;
+  }
+
+  .box8:hover span {
+    display: none;
+  }
+
+  .box8:hover::after {
+    content: "error";
+  }
+
+  .box9:hover {
+    background-color: #800000;
+    transform: scaleX(-1);
+  }
